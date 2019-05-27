@@ -11,6 +11,16 @@ $ vagrant up
 起動後
 $ sudo apt update
 キーボードのレイアウト選択
+[参考]
+https://thejuraku.com/pc/ubuntu%E3%81%A7%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E5%A4%89%E6%9B%B4/
+// コマンド実行
+$ sudo dpkg-reconfigure keyboard-configuration
+
+// 「Generic 105-key (Intl) PC」を選択
+// 「Japanese」を選択
+// 「Japanese」を選択
+// 「The default for the keyboard layout」を選択
+// 「No compose key」を選択で終了
 
 // ubuntu-desktopをインストール
 $ sudo apt install ubuntu-desktop
