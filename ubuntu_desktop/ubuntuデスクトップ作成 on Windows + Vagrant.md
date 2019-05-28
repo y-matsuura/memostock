@@ -7,9 +7,13 @@ https://thejuraku.com/pc/ubuntu%E3%81%A7%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%
 ------------------------------------------------------------------------------------------
 ### Vagrantfile作成
 $ vi Vagrantfile
+
 $ vagrant up
+
 起動後
+
 $ sudo apt update
+
 ### キーボードのレイアウト選択
 [参考]
 https://thejuraku.com/pc/ubuntu%E3%81%A7%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E5%A4%89%E6%9B%B4/
@@ -35,7 +39,9 @@ $ sudo reboot
 ### ubuntuを更新
 https://qiita.com/masoo/items/8ebc51a6a9f32417d4a3
 $ sudo apt update
+
 $ sudo apt dist-upgrade
+
 $ sudo apt autoremove
 
 ### 日本語環境つくる
@@ -71,6 +77,7 @@ $ sudo reboot
 
 ### 日本語キーボードになっていない場合
 $ setxkbmap -print -verbose 10
+
 $ setxkbmap -layout jp
 
 ### たぶんこっちの方がよい
@@ -80,7 +87,9 @@ https://qiita.com/jimaz/items/af134896483ae9d32a7d
 
 ### ubuntuを更新
 $ sudo apt update
+
 $ sudo apt dist-upgrade
+
 $ sudo apt autoremove
 
 ------------------------------------------------------------------------------------------
@@ -99,11 +108,14 @@ https://gist.github.com/pokisin/fc4bf37a5ced0e6f7fe6e45333e37b4f
 ### 必要なパッケージをインストール
 ※随時追加する
 $ sudo apt install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev
+
 $ sudo apt install asciidoc xmlto docbook2x
+
 $ sudo apt install autoconf
 
 ### wgetインストール
 $ sudo apt install wget
+
 $ wget -qO- https://wtfismyip.com/text
 
 ### gitインストール
@@ -122,8 +134,11 @@ $ cd git-2.21.0
 ### コンパイルしてインストール
 [Git公式]
 $ make configure
+
 $ ./configure
+
 $ make all doc info
+
 $ sudo make install install-doc install-html install-info
 
 or
@@ -140,11 +155,14 @@ $ git --version
 ------------------------------------------------------------------------------------------
 ### vimインストール
 $ sudo apt install vim
+
 $ dpkg -l vim
 
 ### atomインストール
 $ sudo add-apt-repository ppa:webupd8team/atom
+
 $ sudo apt update
+
 $ sudo apt install atom
 ------------------------------------------------------------------------------------------
 
