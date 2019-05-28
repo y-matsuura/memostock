@@ -52,13 +52,19 @@ mysql> SELECT Host, User FROM mysql.user;
 ### 反映
 mysql> flush privileges;
 
-### 実行ユーザーでログインしなおす
+### いったんexit
 mysql> quit;
+
+### 初期データを配置する
+※dockerディレクトリの下に配置する
+（例）$ cp -r /vagrant/data ~/matsuura/docker
+
+### 実行ユーザーでログインしなおす
 $ mysql -ucndns2 -pcndns2 -Ddns2_integration
 
 ### 初期データ投入
 $ mysql> source home/data/cloudn_dns_schema.sql;
 $ mysql> source home/data/init.sql;
-※以下のデータはsre-jenkinsで使われているもの。以下でも大丈夫。
+※以下のデータはsre-jenkinsで使われているもの。以下でもたぶん大丈夫。
 dns_reset_data.sql
 dns_init_data.sql
