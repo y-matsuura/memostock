@@ -11,8 +11,11 @@ $ sudo apt remove --auto-remove git
 
 ### 最新のgitをダウンロード
 $ sudo add-apt-repository ppa:git-core/ppa
+
 $ sudo apt update
+
 $ sudo apt install git
+
 [参考]
 https://git-scm.com/download/linux
 
