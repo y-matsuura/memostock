@@ -1,5 +1,7 @@
-[参考]
+### [参考]
 https://qiita.com/thermes/items/926b478ff6e3758ecfea
+
+https://github.com/Linuxbrew/brew
 
 ### パッケージインストール
 $ sudo apt install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
