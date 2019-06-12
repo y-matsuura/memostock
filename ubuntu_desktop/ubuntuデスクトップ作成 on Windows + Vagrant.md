@@ -47,6 +47,8 @@ $ sudo apt autoremove
 ### 日本語環境つくる
 https://kledgeb.blogspot.com/2018/04/ubuntu-1804-91.html
 
+https://github.com/y-matsuura/memostock/blob/master/ubuntu_desktop/%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%85%A5%E5%8A%9B.md
+
 ### Mozcインストール
 https://www.karelie.net/install-ibus-mozc-1804/
 
