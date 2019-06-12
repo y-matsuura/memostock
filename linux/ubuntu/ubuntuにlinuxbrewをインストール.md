@@ -8,16 +8,26 @@ $ sudo apt install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-
 
 $ sudo apt install gettext
 
+## 参考
+https://docs.brew.sh/Homebrew-on-Linux
+
 ### インストールする
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+#### $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+#### $ test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+#### $ test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+#### $ test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+#### $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 
-$ export PATH="$HOME/.linuxbrew/bin:$PATH"
+### 確認。エラー出なければOK
+$ brew doctor
 
-$ export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+#### $ sudo mkdir -p /home/linuxbrew/.linuxbrew/var/homebrew/linked
+#### $ sudo chown -R $(whoami) /home/linuxbrew/.linuxbrew/var/homebrew/linked
 
-$ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
-
-$ export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
+#### $ export PATH="$HOME/.linuxbrew/bin:$PATH"
+#### $ export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+#### $ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+#### $ export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
 
 ### 確認。エラー出なければOK
 $ brew doctor
