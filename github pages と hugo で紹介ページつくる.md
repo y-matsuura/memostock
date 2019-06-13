@@ -11,4 +11,27 @@ https://qiita.com/ryoma-tokushige/items/eba3e6cd415e9755af87
 $ mkdir ~/matsuura/workspace
 
 #### create introduction 
-$ hugo new site introduction
+$ hugo new site selfintroduction
+
+#### confirm
+$ cd ~/matsuura/workspace/selfintroduction
+
+$ hugo server
+
+`http://localhost:1313` にアクセス
+
+#### install theme
+https://themes.gohugo.io/academic/#install
+
+$ git clone https://github.com/sourcethemes/academic-kickstart.git MyAcademic
+
+$ cd ~/matsuura/workspace/selfintroduction/theme/MyAcademic
+
+$ git submodule update --init --recursive
+
+#### confirm
+$ cd ~/matsuura/workspace/selfintroduction/theme/MyAcademic
+
+$ hugo server
+
+`http://localhost:1313` にアクセス
