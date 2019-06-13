@@ -40,9 +40,10 @@ $ hugo server
 #### githubでリポジトリをつくる
 #### edit config
 ```
-baseurl = "https://y-matsuura.github.io/introduction"
+baseurl = "https://y-matsuura.github.io/selfintroduction"
 theme = "MyAcademic"
 canonifyurls = true
+publishDir = "docs"
 ```
 
 #### exec build
@@ -56,16 +57,17 @@ $ cd ~/matsuura/workspace/selfintroduction/theme/MyAcademic/public
 #### push git
 ```
 $ git init
-$ git remote add origin git@github.com:y-matsuura/introduction.git
+$ git checkout -b gh-pages
+$ git remote add origin git@github.com:y-matsuura/selfintroduction.git
 $ git add -A
 $ git commit -m 'initial commit'
-$ git push origin master
+$ git push origin gh-pages
 ```
 
 #### change github-pages
 ```
 ・githubでintroductionリポジトリのsettingをひらく
-・GitHub Pagesのsourceを master branch に変更する 
+・GitHub Pagesのsourceを gh-pages に変更する 
 ```
 
 #### confirm
