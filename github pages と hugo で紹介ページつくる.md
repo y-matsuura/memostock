@@ -19,18 +19,22 @@ $ cd ~/matsuura/workspace/selfintroduction
 $ hugo server
 
 `http://localhost:1313` にアクセス
+※この時点では画面はまっしろ
 
 #### install theme
-https://themes.gohugo.io/academic/#install
+http://www.mit.edu/~k2smith/post/getting-started/
 
-$ git clone https://github.com/sourcethemes/academic-kickstart.git MyAcademic
+$ cd ~/matsuura/workspace/selfintroduction
 
-$ cd ~/matsuura/workspace/selfintroduction/theme/MyAcademic
+$ git init
 
-$ git submodule update --init --recursive
+$ git submodule add https://github.com/gcushen/hugo-academic.git themes/academic
 
 #### confirm
-$ cd ~/matsuura/workspace/selfintroduction/theme/MyAcademic
+
+$ cd ~/matsuura/workspace/selfintroduction
+
+$ cp -av themes/academic/exampleSite/* .
 
 $ hugo server
 
@@ -40,35 +44,34 @@ $ hugo server
 #### githubでリポジトリをつくる
 #### edit config
 ```
-baseurl = "https://y-matsuura.github.io/selfintroduction"
-theme = "MyAcademic"
+baseurl = "https://y-matsuura.github.io/selfintroduction/"
+theme = "academic"
 canonifyurls = true
 publishDir = "docs"
 ```
 
 #### exec build
-$ cd ~/matsuura/workspace/selfintroduction/theme/MyAcademic
+$ cd ~/matsuura/workspace/selfintroduction
 
 $ hugo
 
-#### move public
-$ cd ~/matsuura/workspace/selfintroduction/theme/MyAcademic/public
-
 #### push git
 ```
-$ git init
-$ git checkout -b gh-pages
 $ git remote add origin git@github.com:y-matsuura/selfintroduction.git
 $ git add -A
 $ git commit -m 'initial commit'
-$ git push origin gh-pages
+$ git push origin master
 ```
 
 #### change github-pages
 ```
 ・githubでintroductionリポジトリのsettingをひらく
-・GitHub Pagesのsourceを gh-pages に変更する 
+・GitHub Pagesのsourceを master/docs に変更する 
 ```
 
 #### confirm
-`Your site is ready to be published at https://y-matsuura.github.io/introduction/. ` をクリック
+`Your site is ready to be published at https://y-matsuura.github.io/selfintroduction/. ` をクリック
+
+#### cusomise
+##### アイコン
+https://fontawesome.com/icons?d=gallery&s=brands
