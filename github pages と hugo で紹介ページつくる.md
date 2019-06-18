@@ -42,12 +42,19 @@ $ hugo server
 
 ### githubで公開してみる
 #### githubでリポジトリをつくる
-#### edit config
+※ひとまずpublicでつくる。
+
+#### copy from academic exampleSite
+$ cp ~/matsuura/workspace/selfintroduction/themes/academic/exampleSite/config/_default/config.toml ~/matsuura/workspace/selfintroduction/config/
+
+#### modify config
 ```
 baseurl = "https://y-matsuura.github.io/selfintroduction/"
 theme = "academic"
-canonifyurls = true
 publishDir = "docs"
+canonifyurls = true
+relativeurls = true
+※relativeurlsがないと hugo コマンドで生成してコミットしても css が当たらなかった。index.html で css のパスが読み込めないパスになっていた。
 ```
 
 #### exec build
