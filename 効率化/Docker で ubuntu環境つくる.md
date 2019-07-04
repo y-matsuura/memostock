@@ -6,7 +6,7 @@ $ `docker pull ubuntu:18.04`
 # 確認
 $ `docker images`
 # dockerコンテナ実行
-$ `docker run -it -d --name my-ubuntu ubuntu:18.04`
+$ `docker run -it -v /d/matsuura/self/docker/ubuntu/mydata:/var/www/html --name my-ubuntu ubuntu:18.04 -d`
 ```
 参考
 https://qiita.com/wMETAw/items/34ba5c980e2a38e548db
