@@ -1,0 +1,20 @@
+
+
+# リポジトリを変更
+$ sudo sed -i -e 's%http://.*.ubuntu.com%http://ftp.jaist.ac.jp/pub/Linux%g' /etc/apt/sources.list
+# ホームディレクトリを変更
+$ sudo vim /etc/passwd
+```
+ユーザ名の行を探し/home/xxxを「/mnt/c/linux_home」に変更
+exitコマンドで一旦ubuntuを終了します。
+再度「ubuntu」を起動して、ホームディレクトリが変更されていることを確認します。
+```
+
+# 
+$ sudo sed -i.bak -e "s%http://archive.ubuntu.com/ubuntu/%http://ftp.iij.ad.jp/pub/linux/ubuntu/archive/%g" /etc/apt/sources.list
+## 日本語環境設定インストール
+$ sudo apt install language-pack-ja
+## ロケールを変更する
+$ sudo update-locale LANG=ja_JP.UTF-8
+
+
