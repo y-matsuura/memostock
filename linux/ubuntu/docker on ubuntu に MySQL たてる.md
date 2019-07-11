@@ -36,15 +36,19 @@ $ mysql -uroot -proot
 mysql> create database dns2_integration;
 
 ### USERつくる
+```
 mysql> create user 'cndns2'@'localhost' IDENTIFIED BY '{パスワード}';
 mysql> create user 'cndns2'@'172.17.0.%' IDENTIFIED BY '{パスワード}';
 [例]
 create user 'cndns2'@'localhost' IDENTIFIED BY 'cndns2';
 create user 'cndns2'@'172.17.0.%' IDENTIFIED BY 'cndns2';
+```
 
 ### 権限与える
+```
 mysql> grant all on dns2_integration.* to 'cndns2'@'localhost';
 mysql> grant all on dns2_integration.* to 'cndns2'@'172.17.0.%';
+```
 
 ### USER確認
 mysql> SELECT Host, User FROM mysql.user;
@@ -63,8 +67,10 @@ mysql> quit;
 $ mysql -ucndns2 -pcndns2 -Ddns2_integration
 
 ### 初期データ投入
+```
 $ mysql> source home/data/cloudn_dns_schema.sql;
 $ mysql> source home/data/init.sql;
 ※以下のデータはsre-jenkinsで使われているもの。以下でもたぶん大丈夫。
 dns_reset_data.sql
 dns_init_data.sql
+```
