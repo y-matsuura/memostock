@@ -23,6 +23,12 @@ https://kuracux.hatenablog.jp/entry/2018/12/30/182617
 https://blowup-bbs.com/gcp-cloud-functions-python3/
 
 ## seleniumu
+### 公式
+https://www.seleniumhq.org/projects/
+
+### 公式github
+https://github.com/SeleniumHQ/selenium/wiki/Grid2
+
 ### Awesome Selenium : 素晴しい Selenium ライブラリの数々
 https://qiita.com/hatai/items/a4cbff763b9ee8a7879a
 
