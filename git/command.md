@@ -1,3 +1,8 @@
+#### まとめ
+https://togetter.com/li/1392604
+
+https://qiita.com/kanimisonson/items/922e43dafc2bc484bf69
+
 #### 設定の一覧表示
 git config -l
 
