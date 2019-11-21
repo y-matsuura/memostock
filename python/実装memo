@@ -1,0 +1,4 @@
+input_list = list([int(input()) for i in range(5)])
+print(max(input_list))
+print(min(input_list))
+
