@@ -207,7 +207,7 @@ git config --add alias.tree "log --graph --pretty='format:%C(yellow)%h%Creset %s
 
 [コマンド]
 git tree --all
-
+```
 
 #### git clone
 ##### 特定のブランチを指定する
@@ -301,3 +301,10 @@ git branch
 
 #### ローカルブランチを削除
 git branch -D [ブランチ名]
+
+#### リモートブランチの確認
+git branch -a
+
+#### リモートブランチをローカルにチェックアウトする
+git checkout -b local_branch_name origin/remote_branch_name
+
