@@ -294,3 +294,10 @@ git branch -dr old-branch
 ６－２．
 git branch --delete --remotes old-branch
 ```
+
+
+#### ローカルブランチの確認
+git branch
+
+#### ローカルブランチを削除
+git branch -D [ブランチ名]
