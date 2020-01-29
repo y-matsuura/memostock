@@ -172,10 +172,8 @@ git remote set-url origin aws-sdk-for-ruby:git/aws-sdk-for-ruby.git
 
 #### リモートブランチを削除する
 ```
-$ git branch --remote
-$ git push --delete origin 【ブランチ名】
-
-git push --delete origin develop_/matsuura-agent-verify
+git push --delete <Remote branch>
+git push origin:<Remote branch>
 ```
 
 #### Githubで特定のpull requestをローカルに持ってくる
