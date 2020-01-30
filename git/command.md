@@ -124,11 +124,10 @@ https://qiita.com/kyoyyy/items/92c46ea10654ea638398
 
 #### リモートブランチ削除
 ```
-git push --delete origin branchname
-[例]
-git push --delete origin develop_/matsuura
+git push -d origin {ブランチ名}
 
-git checkout -b develop_/matsuura
+（例）
+git push -d origin feature/3734
 ```
 
 # ファイルのリネーム
