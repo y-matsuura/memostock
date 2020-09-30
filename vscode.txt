@@ -1,0 +1,24 @@
+=====================================================
+VSCode でマークダウンのプレビューを右側に出す
+=====================================================
+https://qiita.com/Yoshipe/items/b14ef34bb6d63719d92c
+
+.md ファイルを開いている状態で、「Command + K」を押してから、一度手を離して、「V」を押すと、いい感じに右側にマークダウンのプレビューが出ます。
+
+
+【Vue.js】初心者にオススメなエディタは「VSCode」＋「Vetur」【拡張機能オススメ一覧】
+https://biz-navi.site/vscode%EF%BC%8Bvetur/
+
+
+[VS Code] ファイルを新しいタブで開くのをデフォルトにする
+https://notti-blog.com/entry/vscode-new-tab/
+
+
+
+■プレビューを別タブに表示
+Ctrl ＋ Shift ＋ V
+
+■プレビューを横に表示
+[ Ctrl ＋ K ] , [ V ]
+
+

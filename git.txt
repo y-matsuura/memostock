@@ -1,0 +1,103 @@
+//新規ローカルブランチを作る
+$ git branch (作成するブランチ名)
+//リモートのあるブランチを元に新規ローカルブランチを作る
+$ git branch (新しいブランチ名) (元にするブランチ名)
+
+//新規ローカルブランチを作りそのブランチに移動する
+$ git checkout -b (作成するブランチ名)
+//リモートのあるブランチを元に新規ローカルブランチを作りそのブランチに移動する
+$ git checkout -b (新しいブランチ名) (元にするブランチ名)
+
+
+
+◆リモートブランチを削除
+git push -d origin {ブランチ名}
+
+
+git push -d origin feature/3734
+
+
+◆rebase
+https://qiita.com/dys/items/c062b1be0d0287352e37
+
+git fetch origin
+
+git rebase origin/develop
+or
+git pull --rebase origin develop
+
+※confilict発生した場合
+git add
+git rebase --continue
+
+git push --force
+or
+git push --force-with-lease
+
+
+取り消し
+※コンフリクト解消の作業状態はなくなってしまいます
+git rebase --abort
+
+※コンフリクト解消の作業状態を維持しつつ、rebaseはキャンセルできました
+git rebase --quit
+
+
+
+◆履歴
+git log --oneline
+
+git log --graph
+
+
+
+◆ローカルブランチ削除
+git branch -d [ブランチ名]
+
+git checkout -b "feature/3801" "origin/feature/3801"
+
+
+◆commit取り消し
+
+・直前の commit を index に戻す
+git reset --soft HEAD~
+
+
+・ファイル変更と add と直前の commit を取り消す
+git reset --hard HEAD~
+
+git reset --hard 5d00d25690a93e80f0de0f6ab2aac93c1e93c11a
+
+5d00d25690a93e80f0de0f6ab2aac93c1e93c11a
+
+
+
+◆ローカルのmaster / developをリモートに合わせたい
+// 1) リモートの最新を取ってきておいて・・
+$ git fetch origin master
+
+// 2) ローカルのmasterを、リモート追跡のmasterに強制的に合わせる！
+$ git reset --hard origin/master
+
+
+
+◆リモートのタグを取得する。
+git pull --tags
+
+
+◆タグからチェックアウトしてブランチを作成する
+git checkout refs/tags/{タグ名}
+
+例
+git checkout refs/tags/release/2.4.0.12
+
+git checkout refs/tags/release/2.4.1.0
+
+
+
+
+
+
+<<<<<<< HEAD
+
+

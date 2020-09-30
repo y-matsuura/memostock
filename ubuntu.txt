@@ -1,0 +1,74 @@
+◆バージョン確認
+cat /etc/os-release
+
+◆
+ps aux | grep nginx
+pgrep -f -l nginx
+
+
+------------------------------------------
+Vimカーソル移動
+------------------------------------------
+https://qiita.com/tpywao/items/bd119f0075e40d47c88b
+
+
+
+◆プロセスが使用しているポートを表示する
+lsof -i
+
+◆ポート番号から使用しているプログラムを表示する
+lsof -i:ポート番号
+
+
+◆接続待ちをしているTCP、UDPポートを表示する
+ss -antu
+netstat -antu
+-a：現在のすべての接続を表示する
+-n：一切の名前解決を行わない
+-t：TCPポートを表示する
+-u：UDPポートを表示する
+
+
+
+------------------------------------------
+nginx コマンド超シンプル早見表
+------------------------------------------
+https://qiita.com/katzueno/items/44e02db2f1bfa0de5860
+
+◆起動
+nginx
+
+sudo service nginx start
+
+◆停止
+nginx -s stop
+
+◆再起動
+nginx -s reload
+
+◆設定ファイルのチェック
+nginx -t
+
+◆設定ファイルの場所
+メイン
+cd /etc/nginx/
+
+各サーバー用
+cd /etc/nginx/conf.d/
+
+◆起動確認
+sudo /etc/init.d/nginx status
+
+
+
+------------------------------------------
+シンボリックリンク関連
+------------------------------------------
+https://qiita.com/fukkun/items/dfa7002371b9f6e1abae
+
+◆削除
+unlink path/to/link
+
+
+
+
